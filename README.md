@@ -28,7 +28,7 @@
 
 ## How to use
 
-See https://scmopt.github.io/optseqtrial/  and  https://www.logopt.com/optseq/ 
+See https://scmopt.github.io/manual/07optseq.html  and  https://www.logopt.com/optseq/ 
 
 Here is an example (after moving to optseq/optseqtrial directory). 
 
