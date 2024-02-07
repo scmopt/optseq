@@ -1,15 +1,15 @@
 # OptSeq Trial 
 > Scheduling Optimization Solver Trial 
 
-
 ## How to Install to Jupyter Notebook (Labo) and/or Google Colaboratory
 
 ## Install
 
 1. Clone from github:
-> `!git clone https://github.com/mikiokubo/optseqtrial.git`
+> `!git clone https://github.com/scmopt/optseq.git`
+
 2. Move to optseq trial directry:
-> `cd optseqtrial`
+> `cd optseq/optseqtrial`
 
 3. Change mode of execution file
 
@@ -19,20 +19,21 @@
  - for Mac 
  > `!chmod +x optseq-mac`  
 
-4. Import package and write a code:> `from optseqtrial.optseq import *`
-5. (Option) Install other packages if necessarily: 
+4. Import package and write a code:> `from optseq.optseqtrial.optseq import *`
+   
+6. (Option) Install other packages if necessarily: 
 
 > `!pip install plotly pandas numpy matplotlib`
 
 
 ## How to use
 
-See https://mikiokubo.github.io/optseqtrial/  and  https://www.logopt.com/optseq/ 
+See https://scmopt.github.io/optseqtrial/  and  https://www.logopt.com/optseq/ 
 
-Here is an example. 
+Here is an example (after moving to optseq/optseqtrial directory). 
 
 ```python
-from optseqtrial.optseq import *
+from optseq import *
 """
 Example 1
 PERT
