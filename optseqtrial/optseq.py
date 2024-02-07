@@ -909,15 +909,20 @@ class Model(object):
         f2.write(f)
         f2.close()
 
+        script = "./optseq"
         import subprocess
         if platform.system() == "Windows":
-            cmd = "optseq "
+            cmd = f"optseq "
         elif platform.system() == "Darwin":
-            cmd = "./optseq-mac "
+            if platform.mac_ver()[2]=="arm64": #model
+                cmd = f"{script}-m1 "
+            else:
+                cmd = f"{script}-mac "
         elif platform.system() == "Linux":
-            cmd = "./optseq-linux "
+            cmd = f"{script}-linux "
         else:
             print(platform.system(), "may not be supported.")
+            
         cmd +=  "-time "+str(self.Params.TimeLimit) + \
                 " -backtrack  "+str(self.Params.Backtruck) +\
                 " -iteration  "+str(self.Params.MaxIteration) +\
