@@ -19,7 +19,7 @@
  - for Mac 
  > `!chmod +x optseq-mac`  
 
-4. Import package and write a code:> `from optseq.optseqtrial.optseq import *`
+4. Import package and write a code:> `from optseq import *`
    
 6. (Option) Install other packages if necessarily: 
 
